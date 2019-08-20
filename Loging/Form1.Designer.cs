@@ -29,96 +29,99 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HarvardDataBase));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.WelcomeLabel = new System.Windows.Forms.Label();
+            this.InstructionsLabel = new System.Windows.Forms.Label();
+            this.UsernameLabel = new System.Windows.Forms.Label();
+            this.PasswordLabel = new System.Windows.Forms.Label();
+            this.UsernameTxt = new System.Windows.Forms.TextBox();
+            this.PasswordTxt = new System.Windows.Forms.TextBox();
+            this.LoginBotton = new System.Windows.Forms.Button();
+            this.ExitBotton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // WelcomeLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.DarkRed;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(194, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(494, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome to Harvard Data Base";
+            this.WelcomeLabel.AutoSize = true;
+            this.WelcomeLabel.BackColor = System.Drawing.Color.DarkRed;
+            this.WelcomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.WelcomeLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.WelcomeLabel.Location = new System.Drawing.Point(194, 19);
+            this.WelcomeLabel.Name = "WelcomeLabel";
+            this.WelcomeLabel.Size = new System.Drawing.Size(477, 38);
+            this.WelcomeLabel.TabIndex = 0;
+            this.WelcomeLabel.Text = "Welcome to Harvard Data Base";
             // 
-            // label2
+            // InstructionsLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("MingLiU-ExtB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(21, 268);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(328, 19);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Please log in to your account";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
+            this.InstructionsLabel.AutoSize = true;
+            this.InstructionsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.InstructionsLabel.Font = new System.Drawing.Font("MingLiU-ExtB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.InstructionsLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.InstructionsLabel.Location = new System.Drawing.Point(24, 275);
+            this.InstructionsLabel.Name = "InstructionsLabel";
+            this.InstructionsLabel.Size = new System.Drawing.Size(328, 19);
+            this.InstructionsLabel.TabIndex = 1;
+            this.InstructionsLabel.Text = "Please log in to your account";
+            this.InstructionsLabel.Click += new System.EventHandler(this.Label2_Click);
             // 
-            // label3
+            // UsernameLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(25, 316);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 14);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Username:";
+            this.UsernameLabel.AutoSize = true;
+            this.UsernameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.UsernameLabel.Location = new System.Drawing.Point(25, 316);
+            this.UsernameLabel.Name = "UsernameLabel";
+            this.UsernameLabel.Size = new System.Drawing.Size(79, 14);
+            this.UsernameLabel.TabIndex = 2;
+            this.UsernameLabel.Text = "Username:";
             // 
-            // label4
+            // PasswordLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(25, 361);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 14);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Password:";
+            this.PasswordLabel.AutoSize = true;
+            this.PasswordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.PasswordLabel.Location = new System.Drawing.Point(25, 361);
+            this.PasswordLabel.Name = "PasswordLabel";
+            this.PasswordLabel.Size = new System.Drawing.Size(79, 14);
+            this.PasswordLabel.TabIndex = 3;
+            this.PasswordLabel.Text = "Password:";
             // 
-            // textBox1
+            // UsernameTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 316);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(164, 23);
-            this.textBox1.TabIndex = 4;
+            this.UsernameTxt.Location = new System.Drawing.Point(125, 316);
+            this.UsernameTxt.Name = "UsernameTxt";
+            this.UsernameTxt.Size = new System.Drawing.Size(164, 23);
+            this.UsernameTxt.TabIndex = 4;
+            this.UsernameTxt.TextChanged += new System.EventHandler(this.UsernameTxt_TextChanged);
             // 
-            // textBox2
+            // PasswordTxt
             // 
-            this.textBox2.Location = new System.Drawing.Point(122, 352);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 23);
-            this.textBox2.TabIndex = 5;
+            this.PasswordTxt.Location = new System.Drawing.Point(125, 352);
+            this.PasswordTxt.Name = "PasswordTxt";
+            this.PasswordTxt.Size = new System.Drawing.Size(164, 23);
+            this.PasswordTxt.TabIndex = 5;
             // 
-            // button1
+            // LoginBotton
             // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(247, 395);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 38);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Log in";
-            this.button1.UseVisualStyleBackColor = false;
+            this.LoginBotton.BackColor = System.Drawing.Color.White;
+            this.LoginBotton.ForeColor = System.Drawing.Color.Black;
+            this.LoginBotton.Location = new System.Drawing.Point(247, 395);
+            this.LoginBotton.Name = "LoginBotton";
+            this.LoginBotton.Size = new System.Drawing.Size(89, 38);
+            this.LoginBotton.TabIndex = 6;
+            this.LoginBotton.Text = "Log in";
+            this.LoginBotton.UseVisualStyleBackColor = false;
+            this.LoginBotton.Click += new System.EventHandler(this.LoginBotton_Click);
             // 
-            // button2
+            // ExitBotton
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(60, 395);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 38);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Exit";
-            this.button2.UseVisualStyleBackColor = false;
+            this.ExitBotton.BackColor = System.Drawing.Color.White;
+            this.ExitBotton.ForeColor = System.Drawing.Color.Black;
+            this.ExitBotton.Location = new System.Drawing.Point(60, 395);
+            this.ExitBotton.Name = "ExitBotton";
+            this.ExitBotton.Size = new System.Drawing.Size(89, 38);
+            this.ExitBotton.TabIndex = 7;
+            this.ExitBotton.Text = "Exit";
+            this.ExitBotton.UseVisualStyleBackColor = false;
+            this.ExitBotton.Click += new System.EventHandler(this.ExitBotton_Click);
             // 
             // HarvardDataBase
             // 
@@ -128,14 +131,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(914, 470);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.ExitBotton);
+            this.Controls.Add(this.LoginBotton);
+            this.Controls.Add(this.PasswordTxt);
+            this.Controls.Add(this.UsernameTxt);
+            this.Controls.Add(this.PasswordLabel);
+            this.Controls.Add(this.UsernameLabel);
+            this.Controls.Add(this.InstructionsLabel);
+            this.Controls.Add(this.WelcomeLabel);
             this.Font = new System.Drawing.Font("MingLiU-ExtB", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -150,14 +153,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label WelcomeLabel;
+        private System.Windows.Forms.Label InstructionsLabel;
+        private System.Windows.Forms.Label UsernameLabel;
+        private System.Windows.Forms.Label PasswordLabel;
+        private System.Windows.Forms.TextBox UsernameTxt;
+        private System.Windows.Forms.TextBox PasswordTxt;
+        private System.Windows.Forms.Button LoginBotton;
+        private System.Windows.Forms.Button ExitBotton;
     }
 }
 

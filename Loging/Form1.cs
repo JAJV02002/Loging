@@ -51,7 +51,7 @@ namespace Loging
 
         private void ExitBotton_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

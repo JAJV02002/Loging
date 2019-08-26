@@ -39,8 +39,8 @@ namespace Loging
             
             if (username == "juancho" & password == "123tamarindo")
             {
-                MessageBox.Show("Welcome to Harvard Data Base");
-                
+                MessageBox.Show("Welcome to Harvard Data Base " + username);
+                this.Hide();
             }
             else
             {
@@ -53,5 +53,32 @@ namespace Loging
         {
             this.Close();
         }
+        private void UsernameTxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                PasswordTxt.Focus();
+            }
+        }
+        private void PasswordTxt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string password = PasswordTxt.Text;
+            string username = UsernameTxt.Text;
+
+            if ((int)e.KeyChar == (int)Keys.Enter)
+            {
+                if (username == "juancho" & password == "123tamarindo")
+                {
+                    MessageBox.Show("Welcome to Harvard Data Base " + username);
+
+                }
+                else
+                {
+                    MessageBox.Show("Your password or username are not correct");
+                }
+            }
+        }
+
+       
     }
 }

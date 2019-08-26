@@ -91,13 +91,16 @@
             this.UsernameTxt.Size = new System.Drawing.Size(164, 23);
             this.UsernameTxt.TabIndex = 4;
             this.UsernameTxt.TextChanged += new System.EventHandler(this.UsernameTxt_TextChanged);
+            this.UsernameTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.UsernameTxt_KeyPress);
             // 
             // PasswordTxt
             // 
             this.PasswordTxt.Location = new System.Drawing.Point(125, 352);
             this.PasswordTxt.Name = "PasswordTxt";
+            this.PasswordTxt.PasswordChar = '*';
             this.PasswordTxt.Size = new System.Drawing.Size(164, 23);
             this.PasswordTxt.TabIndex = 5;
+            this.PasswordTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.PasswordTxt_KeyPress);
             // 
             // LoginBotton
             // 
@@ -140,8 +143,8 @@
             this.Controls.Add(this.InstructionsLabel);
             this.Controls.Add(this.WelcomeLabel);
             this.Font = new System.Drawing.Font("MingLiU-ExtB", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "HarvardDataBase";
             this.Text = "Harvard Data Base";
